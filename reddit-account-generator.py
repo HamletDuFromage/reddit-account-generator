@@ -22,7 +22,7 @@ class AccountGenerator:
         self.pwd = "SuperSecretPassWordDoNotHack01"
         self.credentials_path = "credentials.txt"
         self.random_word = RandomWords()
-        self.tbb_path = Path.home() + '/.local/opt/tor-browser/app/' # Add your own tor bundle path
+        self.tbb_path = f'{Path.home()}/.local/opt/tor-browser/app/' # Add your own tor bundle path
         #self.cookiejar = browser_cookie3.firefox(domain_name="google.com")
 
     def generate_username(self):
